@@ -4,4 +4,3 @@ function getCurrentYear() {
 
     document.getElementById('current_year').innerHTML = year;
 }
-
