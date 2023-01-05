@@ -1,27 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Collins Boit">
+  <meta name="description" content="Web site created using create-snowpack-app" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Collins Boit | Software Developer</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body onload="getCurrentYear()">
+  <div class="text-secondary px-4 py-5 text-center" style="height: 100vh;">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-dark"><span id="coding" style="color:#86C232">Coding</span> is today's
+        language of creativity</h1>
+      <br>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-3 mb-4" style="color: #6B6E70;">“If debugging is the process of removing software bugs, then
+          programming must be the
+          process of putting them in – Edsger Dijkstra”</p>
+        <hr style="visibility: hidden;">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="#about" class="btn btn-outline-success btn-lg px-4 me-sm-3">About Me</a>
+          <a href="https://drive.google.com/file/d/1rdF7KnkrLQDhz-L8HGR7soKSAr3l5a5A/view?usp=sharing" target="_blank"
+            class="btn btn-outline-secondary btn-lg px-4 me-sm-3 fw-bold">Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container bg text-secondary px-4 py-5" id="about">
+      <div class="py-5" data-aos="fade-up">
+        <div class="line-break" data-aos="fade-right"></div><br>
+        <h4 class="display-5 fw-bold text-dark">Hi, I <span style="color:#86C232" data-aos="fade-right">am</span>
+        </h4>
+        <h1 class="display-5 text-dark fw-italic" data-aos="zoom-in">COLLINS BOIT</h1>
+        <br>
+        <p data-aos="fade-left" style="color: #6B6E70;">With 2 years of experience in the industry, I am a backend and
+          Android developer. I am currently working at a fintech startup company, where I have been able to apply my
+          skills and knowledge to help drive innovation and growth.</p>
+        <p data-aos="fade-left" style="color: #6B6E70;">My background in software development encompasses Java, Kotlin,
+          and TypeScript, as well as a variety of programming languages. AWS, GCP, Heroku, and Netlify are also cloud
+          platforms I've used.</p>
+        <p data-aos="fade-left" style="color: #6B6E70;">Additionally, I am a strong team player and can effectively
+          communicate and collaborate with cross-functional teams. As a developer, I am always looking for ways to grow
+          and improve, and I am excited to continue learning and contributing to the industry.</p>
+        <hr style="visibility: hidden;">
+        <a class="btn btn-outline-secondary text-dark btn-lg px-4 me-sm-3" href="#services">Services</a>
+        <a class="btn btn-outline-success text-dark btn-lg px-4 me-sm-3" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container  text-secondary px-4 py-5" id="services">
+
+
+    <div class="py-5" data-aos="fade-up">
+      <h1 class="display-5 fw-bold text-dark">SERVIC<span style="color:#86C232" data-aos="fade-right">ES</span>
+      </h1>
+      <div class="line-break" data-aos="fade-right"></div><br>
+      <p data-aos="fade-left">Get your Services and Products available online</p>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6" data-aos="fade-up-right">
+          <div class="card mb-4 border-0">
+            <div class="card-body">
+              <h5 class="card-title">Backend Development</h5>
+              <br>
+              <p data-aos="fade-left" style="color: #6B6E70;">Develop and maintain server-side applications and APIs</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Integrate with third-party APIs and services</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Implement security measures to protect against data
+                breaches and cyber attacks</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Scale and optimize server infrastructure to handle high
+                traffic and demand</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Implement and maintain databases and data storage
+                solutions</p>
+              <p data-aos="fade-left" style="color: #6B6E70;"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-6" data-aos="fade-up-left">
+          <div class="card mb-4 border-0">
+            <div class="card-body">
+              <h5 class="card-title">Android Development</h5>
+              <br>
+              <p data-aos="fade-left" style="color: #6B6E70;">Design and develop native and hybrid Android applications
+              </p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Implement user interfaces and create visually appealing
+                designs</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Integrate with APIs and third-party libraries</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Test and debug applications to ensure they are stable and
+                perform well</p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Publish and maintain applications on the Google Play Store
+              </p>
+              <p data-aos="fade-left" style="color: #6B6E70;">Implement features to improve user experience and
+                engagement</p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="visibility: hidden;">
+
+        <div class="container bg-white text-secondary px-4 py-5">
+          <div class="py-5" data-aos="zoom-in-up">
+            <h1 class="display-5 fw-bold text-dark">NEWSLETT<span style="color:#86C232" data-aos="fade-right">ER</span>
+            </h1>
+            <div class="line-break"></div><br>
+            <p data-aos="fade-left">Subscribe to my blogs, I promise I won't spam</p>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address to subscribe</label>
+                <hr style="visibility: hidden;">
+                <button type="submit" class="btn btn-outline-danger btn-lg px-4 me-sm-3">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="container bg-white text-secondary px-4 py-5" id="projects">
+          <div class="py-5" data-aos="fade-up">
+            <h1 class="display-5 fw-bold text-dark">PROJEC<span style="color:#86C232" data-aos="fade-right">TS</span>
+            </h1>
+            <div class="line-break" data-aos="fade-right"></div><br>
+            <p>A Developer learning day by day</p>
+            <div class="row">
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Devvscape | CodeHumor</h5>
+                    <p>We have the best code-related memes. Built with Spring Boot, AWS and Ionic Angular for the hybrid
+                      app. It's live check it out
+                      :)</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.silkwebhq.devvscapecode" target="_blank"
+                      class="btn btn-outline-info">Download App</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">BirdApp (Twitter Clone)</h5>
+                    <p>It's a Twitter clone built with Spring Boot (backend) and Angular (frontend) :)</p>
+                    <a href="https://github.com/l00pinfinity/twitter-clone" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                    <a href="https://birdapp.netlify.app/login" target="_blank" class="btn btn-outline-secondary">Live
+                      Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Kutiit API</h5>
+                    <p>Kutiit(people of the mouth/people who speak the same language) API is a REST API with Kalenjin
+                      Proverbs, English, Meaning, and the Tribe—built with Spring Boot and MySQL.</p>
+                    <a href="https://github.com/l00pinfinity/kutiitapi" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                    <a href="https://kutiit.co.ke/" target="_blank" class="btn btn-outline-secondary">Live
+                      Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="visibility: hidden;">
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">TellaMicro Bot</h5>
+                    <p>BotellaMicro is a free URL shortener bot that redirects to a specific website of your choice when
+                      long, ugly links are converted to short, unique URLs. To shorten links, use this tool.</p>
+                    <a href="https://github.com/l00pinfinity/tellamicrobot" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                    <a href="https://t.me/tellamicrobot" target="_blank" class="btn btn-outline-secondary">Live
+                      Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Silkweb HQ</h5>
+                    <p>The Future of Silkweb and the SilkCommunity.Get your services and products online, where users'
+                      experience is personalized. </p>
+                    <a href="https://github.com/silkwebhq" target="_blank" class="btn btn-outline-info">Github</a>
+                    <a href="https://silkwebhq.com/" target="_blank" class="btn btn-outline-secondary">Visit Website</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Scrape</h5>
+                    <p>An application made from Angular that scrapes data from a
+                      website. Data includes domain,ip,website title,texts,emails
+                      and links.</p>
+                    <a href="https://github.com/l00pinfinity/scrape" target="_blank" class="btn btn-outline-info">Source
+                      Code</a>
+                    <a href="https://web-scrape.netlify.app/" target="_blank" class="btn btn-outline-secondary">Live
+                      Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="visibility: hidden;">
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Covid-19 Tracker</h5>
+                    <p>It’s an Java Android application that give live statistics of
+                      covid cases from Worldmeters website periodically worldwide</p>
+                    <a href="https://github.com/l00pinfinity/Covid_Tracker" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Furnituristic</h5>
+                    <p>An E-Commerce website made using Angular that is used to
+                      sell furnitures</p>
+                    <a href="https://github.com/l00pinfinity/furnituristic" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Github Search</h5>
+                    <p>An app that uses GitHub API to search GitHub users using their usernames.</p>
+                    <a href="https://github.com/l00pinfinity/github-search" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                    <a href="https://l00pinfinity.github.io/github-search/" target="_blank"
+                      class="btn btn-outline-secondary">Live Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="visibility: hidden;">
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">News Portal</h5>
+                    <p>A rest REST API for querying and retrieving scoped news and information.</p>
+                    <a href="https://github.com/l00pinfinity/news-portal" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Language-Translator-App</h5>
+                    <p>Get translation in over 60 languages and get to know how to
+                      say “hello” in other languages. Language Translator is an
+                      android app made using Java</p>
+                    <a href="https://github.com/l00pinfinity/Language-Translator-App" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Angular Auth</h5>
+                    <p>Angular Application to learn validations and authentication.</p>
+                    <a href="https://github.com/l00pinfinity/AngularAuth" target="_blank"
+                      class="btn btn-outline-info">Soure Code</a>
+                    <a href="https://l00pinfinity.github.io/AngularAuth/login" target="_blank"
+                      class="btn btn-outline-secondary">Live Link</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="visibility: hidden;">
+
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Server Enigma</h5>
+                    <p>An application through which you can upload and download files. </p>
+                    <a href="https://github.com/l00pinfinity/server-enigma" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Daily Quote</h5>
+                    <p>An Android application that fetches quotes from an API and
+                      gives daily quotes</p>
+                    <a href="https://github.com/l00pinfinity/Daily_Quotes" target="_blank"
+                      class="btn btn-outline-info">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-dark">
+          <div class="row" data-aos="zoom-in-up">
+            <div class="col-sm-6 col-md-6">
+              <div class="fun-fact text-center">
+                <h3><i class="fa fa-thumbs-o-up"></i> <span class="timer">5</span></h3>
+                <h6>Happy Clients</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="fun-fact text-center">
+                <h3><i class="fa fa-briefcase fa-6"></i> <span class="timer">10</span></h3>
+                <h6>Completed Projects</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container bg-white text-secondary px-4 py-5" id="contact">
+          <div class="py-5" data-aos="fade-up">
+            <h1 class="display-5 fw-bold text-dark">CONTA<span style="color:#86C232" data-aos="fade-right">CT</span> ME
+            </h1>
+            <div class="line-break" data-aos="fade-right"></div><br>
+            <p data-aos="fade-left">Send me a message</p><br>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6" id="contact-info" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <h4>CONTACT IN<span style="color:#86C232" data-aos="fade-right">FO</span></h4>
+                <hr style="visibility: hidden;">
+                <ul class="contact-details">
+                  <li><b>Location</b>
+                    <h6> Nairobi, Kenya </h6>
+                  </li>
+                  <li><b>Phone No</b>
+                    <h6> +254748458100 </h6>
+                  </li>
+                  <li><b>Email</b>
+                    <h6>collinskipkemboi001@gmail.com</h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-6 text-center" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <h4>CONTACT FO<span style="color:#86C232" data-aos="fade-right">RM</span></h4>
+                <hr style="visibility: hidden;">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="username" placeholder="Your name" required>
+                        <label for="name">Name</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                          <label for="name">Email address</label>
+                        </div>
+                      </div>
+                    </div>
+                    <hr style="visibility: hidden;">
+                    <div class="form-group">
+                      <textarea name="message" id="message" class="form-control" rows="4"
+                        placeholder="Enter your message"></textarea>
+                    </div>
+                    <hr style="visibility: hidden;">
+                    <div class="form-group">
+                      <button class="btn btn-outline-success btn-lg px-4 me-sm-3" type="submit">Send Now</button>
+                      <span id="statusText"></span>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container bg-white text-secondary px-4 py-5">
+          <p class="text-center"> &copy;<span id="current_year"></span> Made with love </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script type="module" src="/dist/index.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/93aabb57c9.js" crossorigin="anonymous"></script>
+
+  <script>
+    AOS.init();
+    AOS.init({
+      duration: 2000, // values from 0 to 3000, with step 50ms
+      disable: 'mobile'
+    });
+  </script>
+</body>
+
 </html>

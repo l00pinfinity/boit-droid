@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300&display=swap');
+
+* {
+    font-family: 'Source Serif Pro', serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.line-break {
+    border: 1px solid #14A76C;
+    width: 15%;
+}
+
+.card h5 {
+    font-weight: bolder;
+}
+
+#contact-info ul li {
+    display: block;
+    padding-bottom: 20px;
+}
+
+#contact-info ul li a {
+    color: #666;
+    float: left;
+    margin-right: 10px;
+}
+
+#contact-info ul li a:hover {
+    color: #417505;
+}
