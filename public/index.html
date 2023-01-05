@@ -16,7 +16,7 @@
 </head>
 
 <body onload="getCurrentYear()">
-  <div class="text-secondary px-4 py-5 text-center" style="height: 100vh;">
+  <div class="text-secondary d-flex px-4 py-5 text-center" style="height: 100vh;">
     <div class="py-5">
       <h1 class="display-5 fw-bold text-dark"><span id="coding" style="color:#86C232">Coding</span> is today's
         language of creativity</h1>
@@ -53,8 +53,8 @@
           communicate and collaborate with cross-functional teams. As a developer, I am always looking for ways to grow
           and improve, and I am excited to continue learning and contributing to the industry.</p>
         <hr style="visibility: hidden;">
-        <a class="btn btn-outline-secondary text-dark btn-lg px-4 me-sm-3" href="#services">Services</a>
-        <a class="btn btn-outline-success text-dark btn-lg px-4 me-sm-3" href="#contact">Contact</a>
+        <a class="btn btn-outline-secondary btn-lg px-4 me-sm-3" href="#services">Services</a>
+        <a class="btn btn-outline-success btn-lg px-4 me-sm-3" href="#contact">Contact</a>
       </div>
     </div>
   </div>
@@ -114,12 +114,13 @@
             </h1>
             <div class="line-break"></div><br>
             <p data-aos="fade-left">Subscribe to my blogs, I promise I won't spam</p>
-            <form>
+            <form id="newsletter-form">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email address to subscribe</label>
+                <input type="email" class="form-control" id="newsletter-email" placeholder="name@example.com" required>
+                <label for="newsletter-email">Email address to subscribe</label>
                 <hr style="visibility: hidden;">
-                <button type="submit" class="btn btn-outline-danger btn-lg px-4 me-sm-3">Join</button>
+                <button type="submit" class="btn btn-outline-success btn-lg px-4 me-sm-3">Join</button>
+                <span id="subscriberStatus"></span>
               </div>
             </form>
           </div>
@@ -368,25 +369,25 @@
                 data-aos-easing="ease-in-sine">
                 <h4>CONTACT FO<span style="color:#86C232" data-aos="fade-right">RM</span></h4>
                 <hr style="visibility: hidden;">
-                <form>
+                <form id="contact-form">
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-floating mb-3">
-                        <input type="name" class="form-control" id="username" placeholder="Your name" required>
-                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="contactName" placeholder="Your name">
+                        <label for="contactName">Name (Optional)</label>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                          <label for="name">Email address</label>
+                          <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                          <label for="contactEmail">Email address</label>
                         </div>
                       </div>
                     </div>
                     <hr style="visibility: hidden;">
                     <div class="form-group">
-                      <textarea name="message" id="message" class="form-control" rows="4"
+                      <textarea name="message" id="contactMessage" class="form-control" rows="4"
                         placeholder="Enter your message"></textarea>
                     </div>
                     <hr style="visibility: hidden;">
@@ -394,6 +395,7 @@
                       <button class="btn btn-outline-success btn-lg px-4 me-sm-3" type="submit">Send Now</button>
                       <span id="statusText"></span>
                     </div>
+                    
                 </form>
               </div>
             </div>

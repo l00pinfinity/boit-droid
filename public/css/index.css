@@ -32,3 +32,8 @@ body {
 #contact-info ul li a:hover {
     color: #417505;
 }
+
+#statusText,
+#subscriberStatus{
+    color: #ff0000;
+}

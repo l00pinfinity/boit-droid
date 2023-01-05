@@ -1,11 +1,30 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { v4 as uuidv4 } from "uuid";
 
-import confetti from 'canvas-confetti';
+//Newsletter
+const newsletterForm = document.querySelector<HTMLFormElement>("#newsletter-form");
+const newsletterEmail = document.querySelector<HTMLInputElement>("#newsletter-email");
 
-confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+type Subscriber = {
+  id: string,
+  email: string
+}
+
+newsletterForm?.addEventListener("submit", e =>{
+  e.preventDefault();
+
+  if (newsletterEmail?.value == "" || newsletterEmail?.value == null) return;
+
+  const newSubscriber = {
+    id: uuidv4(),
+    email: newsletterEmail.value
+  }
+
+  addSubscriber(newSubscriber);
+  newsletterEmail.value = "";
+
+})
+
+function addSubscriber(newSubscriber: Subscriber) {
+  //make api call to add subscriber
+  console.log("Thanks for subscribing " + JSON.stringify(newSubscriber))
+}
