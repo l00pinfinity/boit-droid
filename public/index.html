@@ -1,501 +1,652 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Collins Boit">
-  <meta name="description" content="Hi, I am Collins Boit, With 2 years of experience in the industry, I am a backend and
-  Android developer. I am currently working at a fintech startup company, where I have been able to apply my
-  skills and knowledge to help drive innovation and growth." />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Collins Boit | Software Developer</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Collins Boit">
+    <title>Collins Boit - Software Developer | Security Analyst </title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
-<body onload="getCurrentYear()">
-  <div class="text-secondary d-flex px-4 py-4 text-center" style="height: 100vh;">
-    <div class="py-5 mt-5">
-      <h1 class="display-5 fw-bold text-dark mt-4"><span id="coding" style="color:#86C232">Coding</span> is today's
-        language of creativity</h1>
-      <br>
-      <div class="col-lg-6 mx-auto">
-        <p class="fs-3 mb-4" style="color: #6B6E70;">“If debugging is the process of removing software bugs, then
-          programming must be the
-          process of putting them in – Edsger Dijkstra”</p>
-        <hr style="visibility: hidden;">
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="#about" class="btn btn-outline-success btn-lg px-4 me-sm-3">About Me</a>
-          <a href="https://drive.google.com/file/d/1Aayug5eshb7qHVaRsAG7J53rsDvFbyjt/view?usp=sharing" target="_blank"
-            class="btn btn-outline-secondary btn-lg px-4 me-sm-3 fw-bold">Resume</a>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
     </div>
-  </div>
-
-  <div id="about">
-    <div class="container bg text-secondary px-4 py-5" id="about">
-      <div class="py-5" data-aos="fade-up">
-        <div class="line-break" data-aos="fade-right"></div><br>
-        <h4 class="display-5 fw-bold text-dark">Hi, I <span style="color:#86C232" data-aos="fade-right">am</span>
-        </h4>
-        <h1 class="display-5 text-dark fw-italic" data-aos="zoom-in">COLLINS BOIT</h1>
-        <br>
-        <p data-aos="fade-left" style="color: #6B6E70;">With 2 years of experience in the industry, I am a backend and
-          Android developer. While working at a fintech startup company, I was able to apply my skills and knowledge to
-          drive innovation and growth.</p>
-        <p data-aos="fade-left" style="color: #6B6E70;">My background in software development encompasses Java and
-          TypeScript, as well as a variety of programming languages. AWS, GCP, Heroku, and Netlify are also cloud
-          platforms I've used.</p>
-        <p data-aos="fade-left" style="color: #6B6E70;">Additionally, I am a strong team player and can effectively
-          communicate and collaborate with cross-functional teams. As a developer, I am always looking for ways to grow
-          and improve, and I am excited to continue learning and contributing to the industry.</p>
-        <hr style="visibility: hidden;">
-        <a class="btn btn-outline-secondary btn-lg px-4 me-sm-3" href="#services">Services</a>
-        <a class="btn btn-outline-success btn-lg px-4 me-sm-3" href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container  text-secondary px-4 py-5" id="services">
 
 
-    <div class="py-5" data-aos="fade-up">
-      <h1 class="display-5 fw-bold text-dark">SERVIC<span style="color:#86C232" data-aos="fade-right">ES</span>
-      </h1>
-      <div class="line-break" data-aos="fade-right"></div><br>
-      <p data-aos="fade-left">Get your Services and Products available online</p>
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-6" data-aos="fade-up-right">
-          <div class="card mb-4 border-0">
-            <div class="card-body">
-              <h5 class="card-title">Backend Development</h5>
-              <br>
-              <p data-aos="fade-left" style="color: #6B6E70;">Develop and maintain server-side applications and APIs</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Integrate with third-party APIs and services</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Implement security measures to protect against data
-                breaches and cyber attacks</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Scale and optimize server infrastructure to handle high
-                traffic and demand</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Implement and maintain databases and data storage
-                solutions</p>
-              <p data-aos="fade-left" style="color: #6B6E70;"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-xs-6" data-aos="fade-up-left">
-          <div class="card mb-4 border-0">
-            <div class="card-body">
-              <h5 class="card-title">Android Development</h5>
-              <br>
-              <p data-aos="fade-left" style="color: #6B6E70;">Design and develop native and hybrid Android applications
-              </p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Implement user interfaces and create visually appealing
-                designs</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Integrate with APIs and third-party libraries</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Test and debug applications to ensure they are stable and
-                perform well</p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Publish and maintain applications on the Google Play Store
-              </p>
-              <p data-aos="fade-left" style="color: #6B6E70;">Implement features to improve user experience and
-                engagement</p>
-            </div>
-          </div>
-        </div>
-
-        <hr style="visibility: hidden;">
-
-        <div class="container bg-white text-secondary px-4 py-5">
-          <div class="py-5" data-aos="zoom-in-up">
-            <h1 class="display-5 fw-bold text-dark">NEWSLETT<span style="color:#86C232" data-aos="fade-right">ER</span>
-            </h1>
-            <div class="line-break"></div><br>
-            <p data-aos="fade-left">Subscribe to my blogs, I promise I won't spam</p>
-            <form id="newsletter-form">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="newsletter-email" placeholder="name@example.com" required>
-                <label for="newsletter-email">Email address to subscribe</label>
-                <hr style="visibility: hidden;">
-                <button type="submit" class="btn btn-outline-success btn-lg px-4 me-sm-3">Join</button>
-                <span id="subscriberStatus"></span>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="container bg-white text-secondary px-4 py-5" id="projects">
-          <div class="py-5" data-aos="fade-up">
-            <h1 class="display-5 fw-bold text-dark">PROJEC<span style="color:#86C232" data-aos="fade-right">TS</span>
-            </h1>
-            <div class="line-break" data-aos="fade-right"></div><br>
-            <p>A Developer learning day by day</p>
-            <div class="row">
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Wallet</h5>
-                    <p>Implementing a wallet functionality by integrating it with the APIs that handle the payment
-                      integrations. This application is powered by Spring Boot, Netlix Eureka, and Postgres database.
-                      Still in development.</p>
-                    <a href="https://github.com/l00pinfinity/wallet" target="_blank" class="btn btn-outline-info">Source
-                      Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Devvscape | CodeHumor</h5>
-                    <p>We have the best code-related memes. Built with Spring Boot, AWS and Ionic Angular for the hybrid
-                      app. It's live check it out
-                      :)</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.silkwebhq.devvscapecode" target="_blank"
-                      class="btn btn-outline-info">Download App</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">BirdApp (Twitter Clone)</h5>
-                    <p>It's a Twitter clone built with Spring Boot (backend) and Angular (frontend) :)</p>
-                    <a href="https://github.com/l00pinfinity/twitter-clone" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                    <a href="https://birdapp.netlify.app/explore" target="_blank" class="btn btn-outline-secondary">Live
-                      Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Gamerce Org</h5>
-                    <p>Gamerce is a social networking app designed for gamers who are passionate about video games. With
-                      Gamerce, gamers can create their own profiles, add their favorite games, and connect with other
-                      gamers who share their interests. Become one of the first 1,000 players to receive beta access.
-                    </p>
-                    <a href="https://github.com/gamerce-org" target="_blank"
-                      class="btn btn-outline-info">GitHub</a>
-                    <a href="https://gamerce.org/" target="_blank" class="btn btn-outline-secondary">Join Waitlist</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Kutiit API</h5>
-                    <p>Kutiit(people of the mouth/people who speak the same language) API is a REST API with Kalenjin
-                      Proverbs, English, Meaning, and the Tribe—built with Spring Boot and MySQL.</p>
-                    <a href="https://github.com/l00pinfinity/kutiitapi" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                    <a href="https://kutiit.co.ke/" target="_blank" class="btn btn-outline-secondary">Live
-                      Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <hr style="visibility: hidden;">
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">TellaMicro Bot</h5>
-                    <p>BotellaMicro is a free URL shortener bot that redirects to a specific website of your choice when
-                      long, ugly links are converted to short, unique URLs. To shorten links, use this tool.</p>
-                    <a href="https://github.com/l00pinfinity/tellamicrobot" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                    <a href="https://t.me/tellamicrobot" target="_blank" class="btn btn-outline-secondary">Live
-                      Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Silkweb HQ</h5>
-                    <p>The Future of Silkweb and the SilkCommunity.Get your services and products online, where users'
-                      experience is personalized. </p>
-                    <a href="https://github.com/silkwebhq" target="_blank" class="btn btn-outline-info">Github</a>
-                    <a href="https://silkwebhq.com/" target="_blank" class="btn btn-outline-secondary">Visit Website</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Scrape</h5>
-                    <p>An application made from Angular that scrapes data from a
-                      website. Data includes domain,ip,website title,texts,emails
-                      and links.</p>
-                    <a href="https://github.com/l00pinfinity/scrape" target="_blank" class="btn btn-outline-info">Source
-                      Code</a>
-                    <a href="https://web-scrape.netlify.app/" target="_blank" class="btn btn-outline-secondary">Live
-                      Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <hr style="visibility: hidden;">
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Covid-19 Tracker</h5>
-                    <p>It’s an Java Android application that give live statistics of
-                      covid cases from Worldmeters website periodically worldwide</p>
-                    <a href="https://github.com/l00pinfinity/Covid_Tracker" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Furnituristic</h5>
-                    <p>An E-Commerce website made using Angular that is used to
-                      sell furnitures</p>
-                    <a href="https://github.com/l00pinfinity/furnituristic" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Github Search</h5>
-                    <p>An app that uses GitHub API to search GitHub users using their usernames.</p>
-                    <a href="https://github.com/l00pinfinity/github-search" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                    <a href="https://l00pinfinity.github.io/github-search/" target="_blank"
-                      class="btn btn-outline-secondary">Live Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <hr style="visibility: hidden;">
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">News Portal</h5>
-                    <p>A rest REST API for querying and retrieving scoped news and information.</p>
-                    <a href="https://github.com/l00pinfinity/news-portal" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Language-Translator-App</h5>
-                    <p>Get translation in over 60 languages and get to know how to
-                      say “hello” in other languages. Language Translator is an
-                      android app made using Java</p>
-                    <a href="https://github.com/l00pinfinity/Language-Translator-App" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Angular Auth</h5>
-                    <p>Angular Application to learn validations and authentication.</p>
-                    <a href="https://github.com/l00pinfinity/AngularAuth" target="_blank"
-                      class="btn btn-outline-info">Soure Code</a>
-                    <a href="https://l00pinfinity.github.io/AngularAuth/login" target="_blank"
-                      class="btn btn-outline-secondary">Live Link</a>
-                  </div>
-                </div>
-              </div>
-
-              <hr style="visibility: hidden;">
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
 
 
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Server Enigma</h5>
-                    <p>An application through which you can upload and download files. </p>
-                    <a href="https://github.com/l00pinfinity/server-enigma" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
 
-              <div class="col-md-4 col-sm-6 col-xs-6" data-aos="fade-up">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">Daily Quote</h5>
-                    <p>An Android application that fetches quotes from an API and
-                      gives daily quotes</p>
-                    <a href="https://github.com/l00pinfinity/Daily_Quotes" target="_blank"
-                      class="btn btn-outline-info">Source Code</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="row s-header__inner width-sixteen-col">
 
-        <div class="container text-dark">
-          <div class="row" data-aos="zoom-in-up">
-            <div class="col-sm-6 col-md-6">
-              <div class="fun-fact text-center">
-                <h3><i class="fa fa-thumbs-o-up"></i> <span class="timer">5</span></h3>
-                <h6>Happy Clients</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="fun-fact text-center">
-                <h3><i class="fa fa-briefcase fa-6"></i> <span class="timer">10</span></h3>
-                <h6>Completed Projects</h6>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="s-header__block">
+                    <div class="s-header__logo">
 
-        <div class="container bg-white text-secondary px-4 py-5" id="projects">
-          <div class="py-5" data-aos="fade-up">
-            <h1 class="display-5 fw-bold text-dark">BlO<span style="color:#86C232" data-aos="fade-right">GS</span>
-            </h1>
-            <div class="line-break" data-aos="fade-right"></div><br>
-            <p>Please check out https://github.com/l00pinfinity/blog-stories.</p>
-            <p>It contains my blog posts online, do you
-              have any suggestions? A correction, perhaps? Make a pull request on Github or open an issue.</p>
-            <p>I post my stories on https://l00pinfinity.medium.com/ and https://l00pinfinity.hashnode.dev/</p>
-            <p>Thanks for reading and stay tuned!!!</p>
-          </div>
-        </div>
-
-        <div class="container bg-white text-secondary px-4 py-5" id="contact">
-          <div class="py-5" data-aos="fade-up">
-            <h1 class="display-5 fw-bold text-dark">CONTA<span style="color:#86C232" data-aos="fade-right">CT</span> ME
-            </h1>
-            <div class="line-break" data-aos="fade-right"></div><br>
-            <p data-aos="fade-left">Send me a message</p><br>
-
-            <div class="row">
-              <div class="col-sm-6 col-md-6" id="contact-info" data-aos="fade-right" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                <h4>CONTACT IN<span style="color:#86C232" data-aos="fade-right">FO</span></h4>
-                <hr style="visibility: hidden;">
-                <ul class="contact-details">
-                  <li><b>Location</b>
-                    <h6> Nairobi, Kenya </h6>
-                  </li>
-                  <li><b>Phone No</b>
-                    <h6> +254748458100 </h6>
-                  </li>
-                  <li><b>Email</b>
-                    <h6>collinskipkemboi001@gmail.com</h6>
-                  </li>
-                </ul>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a href="https://twitter.com/l00pinfinity" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path
-                          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                      </svg>
-                    </a>
-                    <a href="https://github.com/l00pinfinity" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16">
-                        <path
-                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                      </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/l00pinfinity/" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path
-                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-sm-6 col-md-6 text-center" data-aos="fade-left" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                <h4>CONTACT FO<span style="color:#86C232" data-aos="fade-right">RM</span></h4>
-                <hr style="visibility: hidden;">
-                <form id="contact-form">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-floating mb-3">
-                        <input type="name" class="form-control" id="contactName" placeholder="Your name">
-                        <label for="contactName">Name (Optional)</label>
-                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
-                          <label for="contactEmail">Email address</label>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+
+                    <ul class="s-header__menu-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Services</a></li>
+                        <li><a href="#journal">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <div class="s-header__contact">
+                        <a href="#contact" class="btn btn--primary s-header__contact-btn">Hire Me</a>
+                    </div> <!-- s-header__contact -->
+
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro">
+
+                <div class="row s-intro__content width-sixteen-col">
+
+                    <div class="column lg-12 s-intro__content-inner grid-block">
+
+                        <div class="s-intro__content-text">
+                            <div class="s-intro__content-pretitle text-pretitle">Hello, I'm Collins</div>
+                            <h2 class="s-intro__content-title">
+                                Cyber Security enthusiast with a <br> foundation in Software Development
+
+                            </h2>
+                        </div> <!-- s-intro__content-text -->
+
+                        <div class="s-intro__content-media">
+                            <div class="s-intro__content-media-inner">
+                                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg" alt="">
+                                <div class="lines">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div> <!-- s-intro__content-media -->
+
+                        <div class="s-intro__scroll-down">
+                            <a href="#about" class="smoothscroll">
+                                <div class="scroll-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                                        fill="none" stroke="#97b34a" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">&lt;!--! Atomicons Free 1.00 by @atisalab License -
+                                        https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons
+                                        --&gt;<polyline points="7 13 12 18 17 13"></polyline>
+                                        <line x1="12" y1="18" x2="12" y2="6"></line>
+                                    </svg>
+                                </div>
+                                <span>Scroll for more</span>
+                            </a>
+                        </div> <!-- s-intro__scroll-down -->
+
+                    </div> <!-- s-intro__content-inner -->
+
+                </div> <!-- s-intro__content -->
+
+            </section> <!-- end s-intro -->
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row s-about__content width-sixteen-col">
+                    <div class="column grid-block grid-section-split">
+
+                        <img src="images/geometric_shape.svg" alt="" class="s-about__content-imgbg">
+
+                        <div class="section-header grid-section-split__header">
+                            <div class="text-pretitle">About</div>
+                            <h2 class="text-display-title">
+                                Software Developer | Security Analyst
+                            </h2>
+                        </div> <!-- end section-header -->
+
+                        <div class="s-about__content-main grid-section-split__primary">
+                            <p class="attention-getter">
+                                I bring over two years of experience in software development environments. Currently
+                                pursuing a Security Analyst program at United States International University - Africa,
+                                my goal is to merge my Cyber Security passion with Software Development skills to
+                                innovate secure solutions for the tech industry.
+                            </p>
+
+                            <p class="attention-getter">
+                                Additionally, I am a strong team player and can effectively communicate and collaborate
+                                with cross-functional teams. As a developer, I am always looking for ways to grow and
+                                improve, and I am excited to continue learning and contributing to the industry..
+                            </p>
+                        </div> <!-- end s-about__content-main -->
+
+                        <div class="s-about__content-btn grid-section-split__bottom">
+                            <a href="#contact" class="btn btn--stroke u-fullwidth">Let's connect</a>
+
+                            <ul class="s-about__social social-list">
+                                <li>
+                                    <a href="https://twitter.com/l00pinfinity" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                            <path
+                                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                                                transform="scale(1.5)">
+                                            </path>
+                                        </svg>
+                                        <span class="u-screen-reader-text">X</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/l00pinfinity" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                                transform="scale(1.5)">
+                                            </path>
+
+
+                                        </svg>
+                                        <span class="u-screen-reader-text">Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/l00pinfinity/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                                transform="scale(1.5)">
+                                            </path>
+
+                                        </svg>
+                                        <span class="u-screen-reader-text">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://l00pinfinity.medium.com/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                            <path
+                                                d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"
+                                                transform="scale(1.5)">
+                                            </path>
+                                        </svg>
+                                        <span class="u-screen-reader-text">Medium</span>
+                                    </a>
+                                </li>
+                            </ul> <!-- end s-footer__social -->
+                        </div> <!-- end s-about__content-btn -->
+
+                    </div> <!-- content-inner -->
+                </div>
+
+            </section> <!-- end s-about -->
+
+            <!-- expertise
+            ----------------------------------------------- -->
+            <section id="expertise" class="s-expertise">
+
+                <div class="row s-expertise__content width-sixteen-col">
+                    <div class="column xl-12 grid-block grid-section-split">
+
+                        <div class="section-header grid-section-split__header">
+                            <div class="text-pretitle">Expertise</div>
+                            <h2 class="text-display-title">
+                                My key areas of expertise.
+                            </h2>
+                            <h3 class="list-items__item-title">Skills</h3>
+
+                            <p><b>Languages:</b> Java, Python, Javascript, Typescript, HTML, CSS. <b>Frameworks:</b> Spring Boot,
+                                Angular, Java Spark, Ionic. Cloud: AWS, GCP, Firebase, Heroku, Netlify. <b>Tools:</b> Linux,
+                                Git, Github, MySQL, Postgres, NX, Jira. <b>Interests:</b> APIs, Capture The Flags (CTFs), Bug
+                                Hunting, Blogging, Bots.</p>
+                        </div> <!-- end section-header -->
+
+                        <div class="s-expertise__content-main grid-section-split__primary">
+
+                            <div class="grid-list-items list-items show-ctr">
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="grid-list-items__title list-items__item-header">
+                                        <h3 class="list-items__item-title">Backend Development</h3>
+                                    </div>
+                                    <div class="grid-list-items__text list-items__item-text">
+                                        <p>
+                                            Developing and maintaining server-side applications and APIs, integrating
+                                            with third-party APIs and services, implementing security measures to
+                                            protect against data breaches and cyber attacks, scaling and optimizing
+                                            server infrastructure to handle high traffic and demand, and implementing
+                                            and maintaining databases and data storage solutions.
+                                        </p>
+                                    </div>
+                                </div> <!-- list-item -->
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="grid-list-items__title list-items__item-header">
+                                        <h3 class="list-items__item-title">Android Development</h3>
+                                    </div>
+                                    <div class="grid-list-items__text list-items__item-text">
+                                        <p>
+                                            Designing and developing native and hybrid Android applications,
+                                            implementing user interfaces and visually appealing designs, integrating
+                                            with APIs and third-party libraries, testing and debugging applications to
+                                            ensure stability and performance, publishing and maintaining applications on
+                                            the Google Play Store, and implementing features to enhance user experience
+                                            and engagement.
+                                        </p>
+                                    </div>
+                                </div> <!-- list-expertise__item -->
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="grid-list-items__title list-items__item-header">
+                                        <h3 class="list-items__item-title">Frontend Development</h3>
+                                    </div>
+                                    <div class="grid-list-items__text list-items__item-text">
+                                        <p>
+                                            Develop responsive and intuitive web interfaces using Angular, prioritizing
+                                            user experience, integrate frontend components with APIs for data
+                                            consistency and optimal functionality, translate UI/UX designs into
+                                            functional web pages ensuring an engaging user interface, and optimize
+                                            application performance for speed and scalability.
+                                        </p>
+                                    </div>
+                                </div> <!-- list-expertise__item -->
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="grid-list-items__title list-items__item-header">
+                                        <h3 class="list-items__item-title">Security Analyst</h3>
+                                    </div>
+                                    <div class="grid-list-items__text list-items__item-text">
+                                        <p>
+                                            I'm learning about Computing Essentials, Cyber Security
+                                            Essentials, Reconnaissance and OSINT techniques, and Scanning & Enumeration.
+                                            Next, I'll delve into Threat and Vulnerability Management, Access Control
+                                            Security, and Web Application Security. Database Security and Wireless
+                                            Network Security will follow. In the upcoming weeks, I'll focus on Security
+                                            Operations And Monitoring, Digital Forensics, and Malware Analysis.
+                                        </p>
+                                    </div>
+                                </div> <!-- list-expertise__item -->
+
+                            </div> <!-- grid-list-items -->
+                        </div> <!-- end s-expertise__content-main -->
+
+                    </div> <!-- end grid-block-->
+                </div> <!-- end s-expertise__content -->
+
+            </section> <!-- end s-expertise -->
+
+        </section> <!-- s-content-->
+
+        <!-- # journal
+        ================================================== -->
+        <section id="journal" class="s-journal">
+
+            <div class="row s-journal__content width-sixteen-col">
+                <div class="column xl-12 grid-block">
+
+                    <div class="grid-full section-header text-center">
+                        <div class="text-pretitle">Recent Articles</div>
+                        <h2 class="text-display-title">
+                            Latest articles from my blog.
+                        </h2>
+                    </div> <!-- end section-header -->
+
+                    <div class="grid-full s-journal__content-main grid-list-items">
+
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+
+                                    <a>Backend Development</a>,
+                                    <a>Code Newbie</a>,
+                                    <a>API</a>
+                                </div>
+                                <h3 class="blog-card__title"><a
+                                        href="https://l00pinfinity.medium.com/getting-started-with-api-fundamentals-767d50bf8d63"
+                                        target="_blank">Getting Started with API Fundamentals</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    APIs simplify application development by abstracting the underlying implementation
+                                    and exposing only the objects or actions needed by developers. An API stands for
+                                    Application Programming Interface....
+                                </p>
+                                <a href="https://l00pinfinity.medium.com/getting-started-with-api-fundamentals-767d50bf8d63"
+                                    target="_blank" class="btn btn--primary">Read More</a>
+                            </div>
+                        </div> <!-- end blog-card -->
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+
+                                    <a>Fintech</a>,
+                                    <a>Banks</a>,
+                                    <a>API</a>
+                                    <a>Sandbox</a>
+                                </div>
+                                <h3 class="blog-card__title"><a
+                                        href="https://medium.com/fintech-and-tech-newsletter/embracing-kiswahili-exploring-unique-terminology-in-kenyan-api-sandbox-development-58a6ef41dd1f"
+                                        target="_blank">Embracing Kiswahili: Exploring Unique Terminology in Kenyan API
+                                        Sandbox Development</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    As a junior developer at PalmPay, I interacted with so many APIs and one fascinating
+                                    trend was the use of unique Kiswahili words as names....
+                                </p>
+                                <a href="https://medium.com/fintech-and-tech-newsletter/embracing-kiswahili-exploring-unique-terminology-in-kenyan-api-sandbox-development-58a6ef41dd1f"
+                                    target="_blank" class="btn btn--primary">Read More</a>
+                            </div>
+                        </div> <!-- end blog card -->
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+
+                                    <a>YAML</a>,
+                                    <a>Software Development</a>,
+                                    <a>Code Newbie</a>
+                                </div>
+                                <h3 class="blog-card__title"><a
+                                        href="https://l00pinfinity.medium.com/yaml-in-three-minutes-ad22e8f770ee"
+                                        target="_blank">YAML in three minutes.</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    The YAML language is serialized much like XML and JSON often used to create
+                                    configuration files with any programming language. Data can be transferred using
+                                    YAML using a common format. YAML files have....
+                                </p>
+                                <a href="https://l00pinfinity.medium.com/yaml-in-three-minutes-ad22e8f770ee"
+                                    target="_blank" class="btn btn--primary">Read More</a>
+                            </div>
+                        </div> <!-- end blog-card -->
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+
+                                    <a>Line Manager</a>,
+                                    <a>Code Newbie</a>,
+                                    <a>Growth</a>
+                                </div>
+                                <h3 class="blog-card__title"><a
+                                        href="https://l00pinfinity.medium.com/is-your-line-manager-helpful-737e08b31e42"
+                                        target="_blank">Is your line manager helpful?</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    The greatest thing you can do is to keep in mind that every senior developer started
+                                    out as a newbie, is your line manager helpful in providing the training and guidance
+                                    you need? Newbies are often....
+                                </p>
+                                <a href="https://l00pinfinity.medium.com/is-your-line-manager-helpful-737e08b31e42"
+                                    target="_blank" class="btn btn--primary">Read More</a>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    <hr style="visibility: hidden;">
-                    <div class="form-group">
-                      <textarea name="message" id="contactMessage" class="form-control" rows="4"
-                        placeholder="Enter your message"></textarea>
-                    </div>
-                    <hr style="visibility: hidden;">
-                    <div class="form-group">
-                      <button class="btn btn-outline-success btn-lg px-4 me-sm-3" type="submit">Send Now</button>
-                      <span id="statusText"></span>
-                    </div>
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="https://www.dreamhost.com/r.cgi?287326">Sponsored</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="https://www.dreamhost.com/r.cgi?287326">Need Web
+                                        Hosting for Your Websites?</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    Need hosting for your website? I would highly recommend <a
+                                        href="https://truehost.co.ke/cloud/aff.php?aff=1850"
+                                        target="_blank">TrueHost</a>.
+                                    Enjoy 100% in-house support, guaranteed performance and uptime, 1-click installs,
+                                    and a super-intuitive control
+                                    panel to make managing your websites and projects easy.
+                                </p>
+                                <a href="https://truehost.co.ke/cloud/aff.php?aff=1850" target="_blank"
+                                    class="btn btn--primary">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
 
-                </form>
-              </div>
+                                    <a>Backend Development</a>,
+                                    <a>Code Newbie</a>,
+                                    <a>API</a>
+                                </div>
+                                <h3 class="blog-card__title"><a
+                                        href="https://medium.com/fintech-and-tech-newsletter/digital-lending-3584f8f37ce2"
+                                        target="_blank">Digital Lending</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    What does it mean? Loans can be given and recovered through web platforms or mobile
+                                    apps through digital lending. In today’s digital world, lending has become more
+                                    convenient and accessible than eve....
+                                </p>
+                                <a href="https://medium.com/fintech-and-tech-newsletter/digital-lending-3584f8f37ce2"
+                                    target="_blank" class="btn btn--primary">Read More</a>
+                            </div>
+                        </div> <!-- end blog-card -->
+
+                    </div> <!-- end grid-list-items -->
+
+                </div> <!-- end grid-block-->
+            </div> <!-- end s-journal__content -->
+
+        </section> <!-- end s-journal -->
+
+        <section id="contact" class="s-pagecontent pagecontent">
+            <div class="row width-narrower pagemain">
+                <div class="column xl-12">
+                    <h2>Contact Me</h2>
+
+                    <div class="row">
+                        <div class="column xl-6 md-12 contact-cta">
+                            <p>
+                                Get your Services and Products available online
+                            </p>
+
+                            <a href="mailto:collinskipkemboi001@gmail.com"
+                                class="btn btn--primary u-fullwidth contact-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                    <path
+                                        d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
+                                    </path>
+                                </svg>
+                                Send Me An Email
+                            </a>
+                        </div>
+                        <div class="column xl-5 md-12 u-flexitem-x-right">
+
+                            <div class="contact-block">
+                                <h6>Follow On Social</h6>
+                                <ul class="contact-social social-list">
+                                    <li>
+                                        <a href="https://twitter.com/l00pinfinity" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24"
+                                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                                <path
+                                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                                                    transform="scale(1.5)">
+                                                </path>
+                                            </svg>
+                                            <span class="u-screen-reader-text">X</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/l00pinfinity" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24"
+                                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                                    transform="scale(1.5)">
+                                                </path>
+
+
+                                            </svg>
+                                            <span class="u-screen-reader-text">Github</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/l00pinfinity/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24"
+                                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                                    transform="scale(1.5)">
+                                                </path>
+
+                                            </svg>
+                                            <span class="u-screen-reader-text">LinkedIn</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://l00pinfinity.medium.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24"
+                                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                                <path
+                                                    d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"
+                                                    transform="scale(1.5)">
+                                                </path>
+                                            </svg>
+                                            <span class="u-screen-reader-text">Medium</span>
+                                        </a>
+                                    </li>
+                                </ul> <!-- end s-footer__social -->
+                            </div>
+
+                            <div class="contact-block">
+                                <h6>Email</h6>
+                                <a href="mailto:collinskipkemboi001@gmail.com">collinskipkemboi001@gmail.com</a>
+                            </div>
+
+                            <div class="contact-block">
+                                <h6>Phone</h6>
+                                <ul class="contact-list">
+                                    <li><a href="tel:254748458100">+254748458100</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end pagemain -->
+
+        </section>
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row s-footer__content">
+                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">
+                    <p>
+                        “If debugging is the process of removing software bugs, then programming must be the process of
+                        putting them in – Edsger Dijkstra”
+                    </p>
+                </div>
+                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
+
+                </div>
+                <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
+                    <h3>Newsletter</h3>
+
+                    <p>
+                        Subscribe to my blogs, I promise I won't spam.
+                    </p>
+
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="mc-form">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center"
+                                placeholder="Your Email Address"
+                                title="The domain portion of the email address is invalid (the portion after the @)."
+                                pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                required>
+                            <input type="submit" name="subscribe" value="Subscribe"
+                                class="btn btn--primary btn--small u-fullwidth">
+                            <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container bg-white text-secondary px-4 py-5">
-          <p class="text-center"> &copy;<span id="current_year"></span> Made with love </p>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>Made with love. Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </p>
+                </div>
+                <div class="column xl-6 lg-12">
+                    <!-- end s-footer__social -->
+                </div>
 
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
+                            stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!
+                            Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0)
+                            Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="6"></line>
+                        </svg>
+                    </a>
+                </div> <!-- end ss-go-top -->
+            </div>
 
+        </footer> <!-- end s-footer -->
 
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script type="module" src="/dist/index.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://kit.fontawesome.com/93aabb57c9.js" crossorigin="anonymous"></script>
+    </div> <!-- end page-wrap -->
 
-  <script>
-    AOS.init();
-    AOS.init({
-      duration: 2000, // values from 0 to 3000, with step 50ms
-      disable: 'mobile'
-    });
-  </script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
